@@ -409,6 +409,69 @@ body {
     </ul>
   </div>
 
+  <!-- Script Section -->
+  <div class="section-title">💬 发给老板的话术（可复制）</div>
+  <div class="service-list">
+
+    <div class="service-item" style="border-color: rgba(212,160,23,0.3); background: linear-gradient(135deg, #1a1200, #1a1a0a);">
+      <div class="icon" style="background: linear-gradient(135deg, #D4A017, #C9A84C);">📋</div>
+      <div class="content">
+        <h3 style="color:#D4A017;">发方案时这样说</h3>
+        <div style="background:#0a0a0a; border:1px solid #222; border-radius:8px; padding:16px; margin-top:8px; font-size:13px; color:#ccc; line-height:1.8; position:relative;">
+          <div style="position:absolute; top:8px; right:12px; font-size:11px; color:#666; cursor:pointer;" onclick="copyText(this,'script1')">📋 复制</div>
+          <div id="script1">老板好，这是咱们鲸岚·烧鸟的开业引流全案，从蓄水预热到开业爆发、日常运营都规划好了，您先看看整体思路，有啥想法随时沟通～
+
+开业引流方案：
+https://lousu123.github.io/jinglan-yakitori/</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-item" style="border-color: rgba(212,160,23,0.3); background: linear-gradient(135deg, #1a1200, #1a1a0a);">
+      <div class="icon" style="background: linear-gradient(135deg, #D4A017, #C9A84C);">💰</div>
+      <div class="content">
+        <h3 style="color:#D4A017;">发报价时这样说</h3>
+        <div style="background:#0a0a0a; border:1px solid #222; border-radius:8px; padding:16px; margin-top:8px; font-size:13px; color:#ccc; line-height:1.8; position:relative;">
+          <div style="position:absolute; top:8px; right:12px; font-size:11px; color:#666; cursor:pointer;" onclick="copyText(this,'script2')">📋 复制</div>
+          <div id="script2">老板，这是咱们的年度服务报价单，¥5,800/年含旗舰版会员+数电发票+每月营销方案，还送一台收银机硬件，日均才15块9，您看下～
+
+年度服务报价单：
+https://lousu123.github.io/jinglan-quotation/</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-item" style="border-color: rgba(212,160,23,0.3); background: linear-gradient(135deg, #1a1200, #1a1a0a);">
+      <div class="icon" style="background: linear-gradient(135deg, #D4A017, #C9A84C);">📎</div>
+      <div class="content">
+        <h3 style="color:#D4A017;">两个一起发</h3>
+        <div style="background:#0a0a0a; border:1px solid #222; border-radius:8px; padding:16px; margin-top:8px; font-size:13px; color:#ccc; line-height:1.8; position:relative;">
+          <div style="position:absolute; top:8px; right:12px; font-size:11px; color:#666; cursor:pointer;" onclick="copyText(this,'script3')">📋 复制</div>
+          <div id="script3">老板好，给您发两个文件：
+
+① 开业引流方案 — 全链路规划，蓄水到开业都安排好了
+https://lousu123.github.io/jinglan-yakitori/
+
+② 年度服务报价单 — ¥5,800/年，含软件+硬件+每月营销
+https://lousu123.github.io/jinglan-quotation/
+
+您先看看，有啥问题随时找我～</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  function copyText(btn, elementId) {
+    var text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(function() {
+      btn.textContent = '✅ 已复制';
+      setTimeout(function() { btn.textContent = '📋 复制'; }, 2000);
+    });
+  }
+  </script>
+
   <!-- Footer -->
   <div class="footer">
     <span class="highlight">🐋 鲸岚·烧鸟</span> · 年度服务报价单<br>
